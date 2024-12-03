@@ -1,38 +1,214 @@
 .App {
+  background-color: #0c0d1c;
+  color: #6ed895;
   text-align: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  padding: 10px;
+  background-color: #14223c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  color: #6ed895;
+  font-size: 35px;
+  background-color: #213355;
+  padding: 5px 0px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header span {
+  color: white;
+  font-size: 20px;
+
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #0c0d1c;
+
+}
+
+.inputDiv {
+  background-color: #213355;
+  padding: 10px;
+}
+
+
+.buttonDiv {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.button {
+  background-color: #6ed895;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: #f87171;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: #d50f0f;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.datafound {
+  background-color: #213355;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.datafound h4 {
+  color: #6ed895;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.apiUrl {
+  padding: 8px 10px;
+  width: 300px;
+  border: none;
+  background-color: #213355;
+  color: white;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.apiUrl:focus {
+  outline: none;
+}
+
+.location {
+  padding: 8px 10px;
+  width: 100px;
+  border: none;
+  background-color: #213355;
+  color: white;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.location:focus {
+  outline: none;
+}
+
+.status {
+  padding: 8px 10px;
+  width: 100px;
+  border: none;
+  background-color: #213355;
+  color: white;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.status:focus {
+  outline: none;
+}
+
+.bdUploadContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numberCount {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  z-index: 10;
+  position: sticky;
+  top: -10px;
+  background-color: #14223c;
+  width: 100%;
+}
+
+.numberCountfailure {
+  color: #d50f0f;
+
+}
+
+.numberCountSuccess {
+  color: #6ed895 !important;
+
+}
+
+.errorMessage {
+  position: relative;
+  color: #d50f0f;
+  width: 100%;
+  height: 200px;
+  background-color: #213355;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  overflow-y: scroll;
+  border: 1px solid #213355;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.errorMessage p {
+  color: rgba(174, 174, 174, 0.399);
+}
+
+.successMessage {
+  color: #6ed895;
+  width: 100%;
+  height: 200px;
+  background-color: #213355;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  overflow-y: scroll;
+  border: 1px solid #213355;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.successMessage p {
+  color: rgba(174, 174, 174, 0.399);
+}
+
+.errorList {
+  background-color: #1d2b46;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #213355;
+  align-items: end;
 }
